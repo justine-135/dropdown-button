@@ -1,0 +1,254 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: rgb(226, 226, 226);
+}
+
+svg {
+	height: 23px;
+	width: 23px;
+}
+
+.home,
+.chat,
+.group,
+.arrow {
+	background-color: rgb(211, 211, 211);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 39px;
+	width: 39px;
+	border: none;
+	cursor: pointer;
+}
+
+img {
+	height: 46px;
+	width: 46px;
+}
+
+.arrow {
+	padding-bottom: 0.8rem;
+}
+
+svg path {
+	fill: rgb(20, 20, 20);
+}
+
+nav {
+	background-color: rgb(253, 253, 253);
+	display: flex;
+	min-height: 58px;
+	box-shadow: 1px 1px 10px 1px gray;
+	position: fixed;
+	width: 100vw;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	width: 95%;
+	margin: auto;
+}
+
+ul li {
+	list-style: none;
+	padding: 0rem 0.2rem;
+}
+
+ul li:first-child {
+	margin-right: auto;
+	font-size: 1.8rem;
+}
+
+.navigation {
+	height: 340px;
+	width: 340px;
+	background-color: white;
+	position: fixed;
+	right: 4%;
+	top: 10%;
+	border-radius: 8px;
+	transition: 200ms ease;
+	overflow: hidden;
+	display: none;
+	z-index: 2;
+	transition-delay: 100ms;
+	box-shadow: 1px 1px 10px 1px gray;
+}
+
+.first-page {
+	position: relative;
+	z-index: 2;
+}
+
+.second-page {
+	display: flex;
+	flex-direction: row;
+
+	transition: 400ms ease;
+	height: 500px;
+	width: auto;
+	z-index: 1;
+	margin: 20px 20px;
+}
+
+.settings-page,
+.profile-page,
+.icons-page {
+	min-width: 300px;
+	transition: 500ms ease;
+}
+
+.first-page {
+	margin: 20px 20px;
+	transition: 400ms ease;
+	width: 300px;
+	min-width: 300px;
+}
+
+.settings-page,
+.profile-page,
+.icons-page {
+	min-height: 100vh;
+}
+
+.profile-icon {
+	overflow: hidden;
+}
+
+.profile-icon,
+.settings-icon,
+.icons-icon,
+.logout-icon {
+	height: 48px;
+	width: 48px;
+	background-color: rgb(211, 211, 211);
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.profile-icon svg,
+.settings-icon svg,
+.icons-icon svg,
+.profile-icon-settings svg,
+.profile-icon-icons svg,
+.logout-icon svg {
+	margin: 12px auto;
+}
+
+.profile-icon-settings,
+.profile-icon-icons {
+	height: 48px;
+	width: 48px;
+	background-color: transparent;
+	margin-right: 8px;
+}
+
+.my-profile,
+.my-settings,
+.my-icons,
+.my-profile-settings,
+.my-profile-profile,
+.my-profile-icons,
+.my-logout {
+	display: flex;
+	align-items: center;
+	margin: 5px 0px;
+	cursor: pointer;
+	color: black;
+	padding: 1rem 1rem;
+	background-color: transparent;
+	border: none;
+	width: 100%;
+}
+
+.my-profile {
+	border-bottom: 1px solid lightgray;
+}
+
+.my-profile h2,
+.my-profile-icons h2,
+.my-profile-settings h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+.my-settings h2,
+.my-icons h2,
+.my-logout h2 {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.my-settings svg,
+.my-icons svg {
+	margin-left: auto;
+}
+
+.first-page button:hover {
+	background-color: rgb(141, 141, 141);
+	border-radius: 10px;
+}
+
+.second-page button:hover {
+	background-color: rgb(141, 141, 141);
+	border-radius: 10px;
+}
+.toggle {
+	display: flex;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.section1,
+.section2,
+.section3 {
+	margin-top: 50px;
+	min-height: 80vh;
+	width: 300px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.section2 {
+	width: 540px;
+}
+
+@media screen and (max-width: 768px) {
+	.section1,
+	.section3 {
+		display: none;
+	}
+
+	.my-settings h2,
+	.my-icons h2,
+	.my-logout h2 {
+		font-size: 1.4rem;
+	}
+
+	.my-profile h2,
+	.my-profile-icons h2,
+	.my-profile-settings h2 {
+		font-size: 2.2rem;
+	}
+
+	ul li:first-child {
+		margin-right: auto;
+		font-size: 1.6rem;
+	}
+}
